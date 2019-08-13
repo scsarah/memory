@@ -1,0 +1,16 @@
+.ia__memory {
+  /* position: absolute; */
+  width: 396px;
+  padding: 6px;
+  background-color: aqua;
+}
+
+.ia__memory__block {
+  display: inline-block;
+  /* position: relative; */
+  width: 84px;
+  height: 96px;
+  margin: 6px;
+  background-color: grey;
+  cursor: pointer;
+}
