@@ -10,4 +10,16 @@ function getRandomMemoryArray() {
   return memoryArray;
 }
 
-getRandomMemoryArray();
+function getRandomMemoryCards() {
+  memoryArray = getRandomMemoryArray();
+  html = "";
+  memoryArray.forEach(function (elt, i) {
+    html += '<div id="ia__memory__card' + elt + '" class="ia__memory__block" >' + elt + ' </div> ';
+  });
+  return html;
+}
+
+$(document).ready(function () {
+  html = getRandomMemoryCards();
+  $(".ia__memory__container").append(html);
+});
