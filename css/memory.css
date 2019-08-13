@@ -14,3 +14,7 @@
   background-color: grey;
   cursor: pointer;
 }
+
+.ia__memory__img {
+  display: none;
+}

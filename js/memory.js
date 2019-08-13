@@ -14,7 +14,12 @@ function getRandomMemoryCards() {
   memoryArray = getRandomMemoryArray();
   html = "";
   memoryArray.forEach(function (elt, i) {
-    html += '<div id="ia__memory__card' + elt + '" class="ia__memory__block" >' + elt + ' </div> ';
+    if (elt <= 8) {
+      imgNumber = elt;
+    } else {
+      imgNumber = elt - 8;
+    }
+    html += '<div id="ia__memory__card' + elt + '" class="ia__memory__block" >' + '<img src="img/img' + imgNumber + '.jpg" alt="a feline" class="ia__memory__img"></img>' + ' </div> ';
   });
   return html;
 }
