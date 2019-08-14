@@ -28,24 +28,28 @@ $(document).ready(function () {
   $(".ia__memory__container").append(getRandomMemoryCards());
 
   let $card = $(".ia__memory__card");
+  let $lapCounter = $(".ia__memory__lap__counter");
 
   let count = 0;
+  let round = 0;
   let cardsRound = []
 
   $card.click(function () {
     $this = $(this);
-    if (!($this.hasClass("ia__memory__clicked") && $this.hasClass("ia__memory__found"))) {
+    if (!($this.hasClass("ia__memory__clicked")) && !($this.hasClass("ia__memory__found"))) {
       if (count < 2) {
         $this.addClass("ia__memory__clicked");
         cardsRound.push($this.children().attr("src"));
         count += 1;
         if (count === 2) {
+          round++;
+          $lapCounter.text("Coups : " + round);
           setTimeout(function () {
             if (cardsRound[0] === cardsRound[1]) {
               $(".ia__memory__clicked").addClass("ia__memory__found");
-            } else {
-              $card.removeClass("ia__memory__clicked");
-            }
+            } // else {
+            $card.removeClass("ia__memory__clicked");
+            // }
             count = 0;
             cardsRound = [];
           }, 700);
