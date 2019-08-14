@@ -1,20 +1,28 @@
 .ia__memory__container {
-  /* position: absolute; */
   width: 396px;
   padding: 6px;
-  background-color: aqua;
+  background-color: rgb(243, 243, 243);
+  border: solid 1px black;
+  border-radius: 12px;
 }
 
-.ia__memory__block {
+.ia__memory__card {
   display: inline-block;
-  /* position: relative; */
   width: 84px;
   height: 96px;
   margin: 6px;
   background-color: grey;
+  border-radius: 12px;
+
   cursor: pointer;
 }
 
 .ia__memory__img {
+  border-radius: 12px;
   display: none;
+}
+
+.ia__memory__clicked .ia__memory__img, 
+.ia__memory__found .ia__memory__img {
+  display: inline-block;
 }
