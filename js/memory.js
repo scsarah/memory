@@ -19,7 +19,7 @@ function getRandomMemoryCards() {
     } else {
       imgNumber = elt - 8;
     }
-    html += '<div id="ia__memory__card' + elt + '" class="ia__memory__block" >' + '<img src="img/img' + imgNumber + '.jpg" alt="a feline" class="ia__memory__img"></img>' + ' </div> ';
+    html += '<div id="ia__memory__card' + elt + '" class="ia__memory__block ia__memory__card' + imgNumber + '" >' + '<img src="img/img' + imgNumber + '.jpg" alt="a feline" class="ia__memory__img"></img>' + ' </div> ';
   });
   return html;
 }
@@ -27,4 +27,8 @@ function getRandomMemoryCards() {
 $(document).ready(function () {
   html = getRandomMemoryCards();
   $(".ia__memory__container").append(html);
+
+  $(".ia__memory__block").click(function () {
+    $(this).children().show();
+  });
 });
