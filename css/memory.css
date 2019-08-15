@@ -55,7 +55,7 @@
   margin-top: 6px;
   margin-bottom: -6px;
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -77,11 +77,12 @@
 }
 
 .ia__memory__restart {
+  color: #353c52;
   text-align: center;
+  text-decoration: none;
   border: solid 2px #353c52;
   border-radius: 12px;
   background-color: #5c6f845b;
   padding: 7px;
   margin: 0 50px;
-  cursor: pointer;
 }
