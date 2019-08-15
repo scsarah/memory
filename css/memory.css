@@ -1,8 +1,20 @@
+/**********************************************
+  GENERAL
+***********************************************/
+
 .ia__memory {
-  width: 412px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
   color: #353c52; 
   font-family: Asap, 'Segoe UI', 'Helvetica', 'Droid Sans', sans-serif;
 }
+
+/**********************************************
+ GAME 
+***********************************************/
 
 .ia__memory__container {
   width: 398px;
@@ -46,7 +58,7 @@
 
 .ia__memory__end__game__background {
   position: absolute;
-  top: 0;
+  top: 88px;
 
   width: 412px;
   height: 447px;
