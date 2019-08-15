@@ -1,12 +1,14 @@
 .ia__memory {
-  width: 410px;
+  width: 412px;
+  color: #353c52; 
+  font-family: Asap, 'Segoe UI', 'Helvetica', 'Droid Sans', sans-serif;
 }
 
 .ia__memory__container {
-  width: 396px;
+  width: 398px;
   padding: 6px;
   background-color: rgb(243, 243, 243);
-  border: solid 1px black;
+  border: solid 1px #353c52;
   border-radius: 12px;
 }
 
@@ -15,7 +17,7 @@
   width: 84px;
   height: 96px;
   margin: 6px;
-  background-color: grey;
+  background-color: #5c6f84;
   border-radius: 12px;
 
   cursor: pointer;
@@ -32,7 +34,7 @@
 }
 
 .ia__memory__lap__counter {
-  border: solid 1px black;
+  border: solid 1px #353c52;
   border-radius: 12px;
   padding: 6px;
   float: right;
