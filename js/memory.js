@@ -29,6 +29,7 @@ $(document).ready(function () {
   $(".ia__memory__container").append(getRandomMemoryCards());
 
   // Declare useful variables
+  let $memoryContainer = $(".ia__memory__container")
   let $cards = $(".ia__memory__card");
   let $lapCounter = $(".ia__memory__lap__counter");
 
@@ -70,7 +71,7 @@ $(document).ready(function () {
 
               // Check when the game is finished and display it.
               if (cardsHaveClassFound.includes(false) === false) {
-                alert("Bravo, vous avez terminé le jeu en " + lap + " coups.");
+                $memoryContainer.after('<div class="ia__memory__end__game__background"><div class="ia__memory__end__game__container"><p class="ia__memory__result">Bravo, vous avez terminé le memory en ' + lap + ' coups !</p><a class="ia__memory__restart">Rejouer</a></div></div>')
               }
             }
 

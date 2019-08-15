@@ -39,3 +39,49 @@
   padding: 6px;
   float: right;
 }
+
+/**********************************************
+  END GAME AND RESTART
+***********************************************/
+
+.ia__memory__end__game__background {
+  position: absolute;
+  top: 0;
+
+  width: 412px;
+  height: 447px;
+  background-color: #353c527c;
+  border-radius: 12px;
+  margin-top: 6px;
+  margin-bottom: -6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ia__memory__end__game__container {
+  width: 206px;
+  height: 206px;
+  border: solid 2px #353c52;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ia__memory__result {
+  text-align: center;
+}
+
+.ia__memory__restart {
+  text-align: center;
+  border: solid 2px #353c52;
+  border-radius: 12px;
+  background-color: #5c6f845b;
+  padding: 7px;
+  margin: 0 50px;
+  cursor: pointer;
+}
